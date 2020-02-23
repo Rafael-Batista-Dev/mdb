@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar secondary-color"
+    >
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div
+              class="dropdown-menu dropdown-primary"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+        <!-- Social Icon  -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fab fa-twitter fa-lg"></i></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Sair
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Main layout-->
+    <main>
+      <!--Main container-->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12">
+            <!--Table-->
+            <table
+              class="table table-hover table-fixed"
+              style="margin-top: 100px;"
+            >
+              <!--Table head-->
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Foto</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Telefone</th>
+                  <th>Status</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+
+              <!--Table body-->
+              <tbody>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Jerry</td>
+                  <td>Horwitz</td>
+                  <td>Italy</td>
+                  <td>Bari</td>
+                  <td>Editor-in-chief</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Janis</td>
+                  <td>Joplin</td>
+                  <td>Poland</td>
+                  <td>Warsaw</td>
+                  <td>Video Maker</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Gary</td>
+                  <td>Winogrand</td>
+                  <td>Germany</td>
+                  <td>Berlin</td>
+                  <td>Photographer</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Angie</td>
+                  <td>Smith</td>
+                  <td>USA</td>
+                  <td>San Francisco</td>
+                  <td>Teacher</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>John</td>
+                  <td>Mattis</td>
+                  <td>France</td>
+                  <td>Paris</td>
+                  <td>Actor</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Otto</td>
+                  <td>Morris</td>
+                  <td>Germany</td>
+                  <td>Munich</td>
+                  <td>Singer</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Angie</td>
+                  <td>Smith</td>
+                  <td>USA</td>
+                  <td>San Francisco</td>
+                  <td>Teacher</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>John</td>
+                  <td>Mattis</td>
+                  <td>France</td>
+                  <td>Paris</td>
+                  <td>Actor</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Otto</td>
+                  <td>Morris</td>
+                  <td>Germany</td>
+                  <td>Munich</td>
+                  <td>Singer</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Angie</td>
+                  <td>Smith</td>
+                  <td>USA</td>
+                  <td>San Francisco</td>
+                  <td>Teacher</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>John</td>
+                  <td>Mattis</td>
+                  <td>France</td>
+                  <td>Paris</td>
+                  <td>Actor</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Otto</td>
+                  <td>Morris</td>
+                  <td>Germany</td>
+                  <td>Munich</td>
+                  <td>Singer</td>
+                  <td>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit fa-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fa fa-trash fa-lg"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <!--Table body-->
+            </table>
+            <!--Table-->
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-12"></div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12"></div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6"></div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6"></div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!--Main container-->
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small secondary-color pt-4 mt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>
+              Here you can use rows and columns here to organize your footer
+              content.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/">
+          MDBootstrap.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>

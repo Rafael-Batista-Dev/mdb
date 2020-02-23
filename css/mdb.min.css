@@ -5359,7 +5359,7 @@ a.waves-light {
   font-size: 10em !important;
 }
 .btn-primary {
-  background-color: #c07fcc !important;
+  background-color: #4285f4 !important;
   color: #fff;
 }
 .btn-primary:hover {
@@ -9040,7 +9040,7 @@ body.scrollable {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
-  border-bottom: 1px solid #ced4da;
+  border-bottom: 2px solid #ced4da;
   -webkit-border-radius: 0;
   border-radius: 0;
   -webkit-box-sizing: content-box;
