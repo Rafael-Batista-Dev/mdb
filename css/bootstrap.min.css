@@ -157,8 +157,6 @@ a {
 }
 a:hover {
   color: #141415;
-  text-decoration: underline;
-  text-transform: uppercase;
 }
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -6036,6 +6034,7 @@ button.bg-dark:hover {
 }
 .border {
   border: 1px solid #dee2e6 !important;
+  border-radius: 10px;
 }
 .border-top {
   border-top: 1px solid #dee2e6 !important;
