@@ -151,12 +151,12 @@
               >
                 <!-- Nav tabs -->
                 <div class="row">
-                  <!--Grid column-->
-                  <div class="col-md-12 mt-4">
+                  <!--Fomulário de iserção de usuários-->
+                  <div class="col-md-12 mt-4" id="box-user-create">
                     <!-- Default form register -->
                     <form
                       class="text-center border border-light p-5"
-                      action="#!"
+                      id="form-user-create"
                     >
                       <p class="h4 ">Cadastrar Usuário</p>
                       <div class="form-row ">
@@ -286,9 +286,11 @@
                           >
                             <input
                               type="radio"
+                              checked
                               class="custom-control-input"
-                              id="defaultInline1"
-                              name="inlineDefaultRadiosExample"
+                              id="masculino"
+                              name="genero"
+                              value="M"
                             />
                             <label
                               class="custom-control-label"
@@ -304,8 +306,9 @@
                             <input
                               type="radio"
                               class="custom-control-input"
-                              id="defaultInline2"
-                              name="inlineDefaultRadiosExample"
+                              id="feminino"
+                              name="genero"
+                              value="F"
                             />
                             <label
                               class="custom-control-label"
@@ -321,6 +324,7 @@
                               type="checkbox"
                               class="form-check-input"
                               id="materialInline3"
+                              name="admin"
                             />
                             <label
                               class="form-check-label"
@@ -337,6 +341,7 @@
                               type="file"
                               id="input-file-now"
                               class="file-upload"
+                              name="foto"
                             />
                           </div>
                         </div>
@@ -353,8 +358,219 @@
 
                     <!-- Default form register -->
                   </div>
-                  <!--Grid column-->
+                  <!--Fomulário de iserção de usuários-->
                 </div>
+
+                <!--Formulário de atualização-->
+                <div
+                  class="col-md-12 mt-4"
+                  id="box-user-update"
+                  style="display:none"
+                >
+                  <!-- Default form register -->
+                  <form
+                    class="text-center border border-light p-5"
+                    id="form-user-update"
+                  >
+                    <p class="h4 ">Atualizar Usuário</p>
+                    <div class="form-row ">
+                      <div class="col-md-4 mt-4">
+                        <!-- Nome -->
+                        <input
+                          type="text"
+                          id="nome"
+                          name="nome"
+                          class="form-control"
+                          placeholder="Nome"
+                        />
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- Data -->
+                        <input
+                          type="date"
+                          id="nascimento"
+                          name="nascimento"
+                          class="form-control"
+                          placeholder="00/00/0000"
+                          aria-describedby="default"
+                        />
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- Telefone -->
+                        <input
+                          type="text"
+                          id="celular"
+                          name="celular"
+                          class="form-control"
+                          placeholder="Telefone"
+                        />
+                      </div>
+                      <div class="col-md-4 mt-4">
+                        <!-- Email -->
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- CEP -->
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="CEP"
+                          onblur="new Busca().cep(this)"
+                          type="text"
+                          id="cep"
+                          name="cep"
+                          size="10"
+                          maxlength="9"
+                        />
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <!-- Rua -->
+                        <input
+                          type="text"
+                          id="logradouro"
+                          name="logradouro"
+                          class="form-control"
+                          placeholder="Rua"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <!-- Bairro -->
+                        <input
+                          type="text"
+                          id="bairro"
+                          name="bairro"
+                          class="form-control"
+                          placeholder="Bairro"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- Cidade -->
+                        <input
+                          type="text"
+                          id="cidade"
+                          name="cidade"
+                          class="form-control"
+                          placeholder="Cidade"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-md-1 mt-4">
+                        <!-- UF-->
+                        <input
+                          type="text"
+                          id="estado"
+                          name="estado"
+                          class="form-control"
+                          placeholder="UF"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-md-1 mt-4">
+                        <!-- Numero -->
+                        <input
+                          type="text"
+                          id="numeroEnd"
+                          name="numeroEnd"
+                          class="form-control"
+                          placeholder="Nº"
+                        />
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- Senha -->
+                        <input
+                          type="password"
+                          id="senha"
+                          name="senha"
+                          class="form-control"
+                          placeholder="Senha"
+                        />
+                      </div>
+                      <div class="col-md-3 mt-4">
+                        <!-- Gênero -->
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            checked
+                            class="custom-control-input"
+                            id="masculino"
+                            name="genero"
+                            value="M"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="defaultInline1"
+                            >Masculino</label
+                          >
+                        </div>
+
+                        <!-- Default inline 2-->
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="feminino"
+                            name="genero"
+                            value="F"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="defaultInline2"
+                            >Feminino</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-2 mt-4">
+                        <!-- Status -->
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="materialInline3"
+                            name="admin"
+                          />
+                          <label class="form-check-label" for="materialInline3"
+                            >Administrador</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-5 mt-4">
+                        <!-- Foto -->
+                        <div class="file-upload-wrapper">
+                          <label>Foto </label>
+                          <input
+                            type="file"
+                            id="input-file-now"
+                            class="file-upload"
+                            name="foto"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sign up button -->
+                    <button
+                      class="btn my-4 btn-block secondary-color"
+                      type="submit"
+                    >
+                      Cadastrar
+                    </button>
+                    <hr />
+                  </form>
+
+                  <!-- Default form register -->
+                </div>
+                <!--Formulário de atualização-->
                 <!-- Nav tabs -->
               </div>
               <!-- Panel 1 -->
@@ -528,6 +744,14 @@
     <script type="text/javascript" src="dist/js/mdb.min.js"></script>
     <!-- Jquery mask-->
     <script type="text/javascript" src="dist/js/jquery.mask.min.js"></script>
+
+    <script src="classes/Utils.js"></script>
+
+    <script src="models/User.js"></script>
+
+    <script src="controllers/UserController.js"></script>
+
+    <script src="./dist/js/index.js"></script>
 
     <script type="text/javascript">
       $("#valorReal").mask("999.999.990,00", { reverse: true });
