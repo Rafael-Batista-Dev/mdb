@@ -14,11 +14,11 @@
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="dist/css/mdb.min.css" rel="stylesheet" />
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="dist/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -411,6 +411,7 @@
                     id="logradouro"
                     class="form-control"
                     placeholder="Rua:"
+                    disabled
                   />
                 </div>
                 <div class="col-md-6 mt-4">
@@ -420,7 +421,7 @@
                     id="bairro"
                     class="form-control"
                     placeholder="Bairro:"
-                    aria-describedby="default"
+                    disabled
                   />
                 </div>
                 <div class="col-md-6 mt-4">
@@ -430,7 +431,7 @@
                     id="cidade"
                     class="form-control"
                     placeholder="Cidade"
-                    aria-describedby="defaul"
+                    disabled
                   />
                 </div>
                 <div class="col-md-2 mt-4">
@@ -440,7 +441,7 @@
                     id="estado"
                     class="form-control"
                     placeholder="UF:"
-                    aria-describedby="default"
+                    disabled
                   />
                 </div>
                 <div class="col-md-3 mt-4">
@@ -618,15 +619,15 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="dist/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- MDB core JavaScript masck-->
-    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="dist/js/mdb.min.js"></script>
+    <!-- Jquery mask-->
+    <script type="text/javascript" src="dist/js/jquery.mask.min.js"></script>
 
     <script type="text/javascript">
       $("#valorReal").mask("999.999.990,00", { reverse: true });
