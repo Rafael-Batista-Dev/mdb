@@ -31,4 +31,49 @@ class User {
     this._foto = foto;
     this._registroData = new Date();
   }
+  get nome() {
+    return this._nome;
+  }
+  get nascimento() {
+    return this._nascimento;
+  }
+  get celular() {
+    return this._celular;
+  }
+  get email() {
+    return this._email;
+  }
+  get cep() {
+    return this._cep;
+  }
+  get logradouro() {
+    return this._logradouro;
+  }
+  get bairro() {
+    return this._bairro;
+  }
+  get cidade() {
+    return this._cidade;
+  }
+  get estado() {
+    return this._estado;
+  }
+  get numeroEnd() {
+    return this._numeroEnd;
+  }
+  get senha() {
+    return this._senha;
+  }
+  get genero() {
+    return this._genero;
+  }
+  get admin() {
+    return this._admin;
+  }
+  get foto() {
+    return this._foto;
+  }
+  set foto(value) {
+    this._foto = value;
+  }
 }
