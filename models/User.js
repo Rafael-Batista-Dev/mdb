@@ -13,6 +13,7 @@ class User {
     senha,
     genero,
     admin,
+    tipo,
     foto
   ) {
     this._nome = nome;
@@ -29,6 +30,7 @@ class User {
     this._genero = genero;
     this._admin = admin;
     this._foto = foto;
+    this._tipo = tipo;
     this._registroData = new Date();
   }
   get nome() {
@@ -73,6 +75,11 @@ class User {
   get foto() {
     return this._foto;
   }
+
+  get tipo() {
+    return this._tipo;
+  }
+
   set foto(value) {
     this._foto = value;
   }

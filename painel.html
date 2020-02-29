@@ -153,7 +153,7 @@
                 <div class="row">
                   <!--Fomulário de iserção de usuários-->
                   <div class="col-md-12 mt-4" id="box-user-create">
-                    <!-- Default form register -->
+                    <!-- Cadastrar Usuário -->
                     <form
                       class="text-center border border-light p-5"
                       id="form-user-create"
@@ -281,7 +281,10 @@
                         </div>
                         <div class="col-md-3 mt-4">
                           <!-- Tipo de residencia -->
-                          <select class="browser-default custom-select">
+                          <select
+                            class="browser-default custom-select"
+                            name="tipo"
+                          >
                             <option selected>Escolha</option>
                             <option value="1">Particular</option>
                             <option value="2">Alugada</option>
@@ -295,16 +298,12 @@
                             <input
                               type="radio"
                               checked
-                              class="custom-control-input"
+                              class="custom-control-inline"
                               id="masculino"
                               name="genero"
                               value="M"
                             />
-                            <label
-                              class="custom-control-label"
-                              for="defaultInline1"
-                              >Masculino</label
-                            >
+                            <label for="defaultInline1">Masculino</label>
                           </div>
 
                           <!-- Default inline 2-->
@@ -313,16 +312,12 @@
                           >
                             <input
                               type="radio"
-                              class="custom-control-input"
+                              class="custom-control-inline"
                               id="feminino"
                               name="genero"
                               value="F"
                             />
-                            <label
-                              class="custom-control-label"
-                              for="defaultInline2"
-                              >Feminino</label
-                            >
+                            <label for="defaultInline2">Feminino</label>
                           </div>
                         </div>
                         <div class="col-md-3 mt-4">
@@ -362,10 +357,16 @@
                       >
                         Cadastrar
                       </button>
+                      <button
+                        class="btn my-4 btn-block btn-cancel"
+                        type="button"
+                      >
+                        Cancelar
+                      </button>
                       <hr />
                     </form>
 
-                    <!-- Default form register -->
+                    <!-- Cadastrar Usuário -->
                   </div>
                   <!--Fomulário de iserção de usuários-->
                 </div>
@@ -376,7 +377,7 @@
                   id="box-user-update"
                   style="display:none"
                 >
-                  <!-- Default form register -->
+                  <!-- Atualiza usuário -->
                   <form
                     class="text-center border border-light p-5"
                     id="form-user-update"
@@ -492,7 +493,7 @@
                           placeholder="Nº"
                         />
                       </div>
-                      <div class="col-md-2 mt-4">
+                      <div class="col-md-3 mt-4">
                         <!-- Senha -->
                         <input
                           type="password"
@@ -503,6 +504,14 @@
                         />
                       </div>
                       <div class="col-md-3 mt-4">
+                        <!-- Tipo de residencia -->
+                        <select class="browser-default custom-select">
+                          <option selected>Escolha</option>
+                          <option value="1">Particular</option>
+                          <option value="2">Alugada</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 mt-4">
                         <!-- Gênero -->
                         <div
                           class="custom-control custom-radio custom-control-inline"
@@ -510,16 +519,12 @@
                           <input
                             type="radio"
                             checked
-                            class="custom-control-input"
+                            class="custom-control-inline"
                             id="masculino"
                             name="genero"
                             value="M"
                           />
-                          <label
-                            class="custom-control-label"
-                            for="defaultInline1"
-                            >Masculino</label
-                          >
+                          <label for="defaultInline1">Masculino</label>
                         </div>
 
                         <!-- Default inline 2-->
@@ -528,19 +533,15 @@
                         >
                           <input
                             type="radio"
-                            class="custom-control-input"
+                            class="custom-control-inline"
                             id="feminino"
                             name="genero"
                             value="F"
                           />
-                          <label
-                            class="custom-control-label"
-                            for="defaultInline2"
-                            >Feminino</label
-                          >
+                          <label for="defaultInline2">Feminino</label>
                         </div>
                       </div>
-                      <div class="col-md-2 mt-4">
+                      <div class="col-md-3 mt-4">
                         <!-- Status -->
                         <div class="form-check form-check-inline">
                           <input
@@ -554,10 +555,10 @@
                           >
                         </div>
                       </div>
-                      <div class="col-md-5 mt-4">
+                      <div class="col-md-6 mt-4">
                         <!-- Foto -->
                         <div class="file-upload-wrapper">
-                          <label>Foto </label>
+                          <label>Foto de perfil </label>
                           <input
                             type="file"
                             id="input-file-now"
@@ -566,18 +567,23 @@
                           />
                         </div>
                       </div>
+                      <div class="col-md-6 mt-4"></div>
                     </div>
                     <!-- Sign up button -->
                     <button
                       class="btn my-4 btn-block secondary-color"
                       type="submit"
                     >
-                      Cadastrar
+                      Atualizar
+                    </button>
+
+                    <button class="btn my-4 btn-block btn-cancel" type="button">
+                      Cancelar
                     </button>
                     <hr />
                   </form>
 
-                  <!-- Default form register -->
+                  <!-- Atualiza usuário -->
                 </div>
                 <!--Formulário de atualização-->
                 <!-- Nav tabs -->
