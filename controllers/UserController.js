@@ -145,9 +145,15 @@ class UserController {
     });
   }
 
-  showPanelCreate() {}
+  showPanelCreate() {
+    document.querySelector("#box-user-create").style.display = "block";
+    document.querySelector("#box-user-update").style.display = "none";
+  }
 
-  showPanelUpdate() {}
+  showPanelUpdate() {
+    document.querySelector("#box-user-create").style.display = "none";
+    document.querySelector("#box-user-update").style.display = "block";
+  }
 
   updateCount() {}
 }
