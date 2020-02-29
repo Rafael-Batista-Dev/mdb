@@ -57,7 +57,52 @@ class UserController {
     });
   }
 
-  getValues(formEl) {}
+  getValues(formEl) {
+    let user = {};
+    let isValid = true;
+
+    [...formEl.elements].forEach(function(field, index) {
+      if (
+        ["nome", "email", "senha", "cep"].indexOf(field.name) > -1 &&
+        !field.value
+      ) {
+        field.parentElement.classList.add("has-error");
+        isValid = false;
+      }
+
+      if (field.name == "genero") {
+        if (field.checked) {
+          user[field.name] = field.value;
+        }
+      } else if (field.name == "admin") {
+        user[field.name] = field.checked;
+      } else {
+        user[field.name] = field.value;
+      }
+    });
+
+    if (!isValid) {
+      return false;
+    }
+
+    return new User(
+      user.nome,
+      user.nascimento,
+      user.celular,
+      user.email,
+      user.cep,
+      user.logradouro,
+      user.bairro,
+      user.cidade,
+      user.estado,
+      user.numeroEnd,
+      user.senha,
+      user.genero,
+      user.admin,
+      user.tipo,
+      user.foto
+    );
+  }
 
   addLine(dataUser) {
     let tr = document.createElement("tr");
