@@ -6,7 +6,66 @@ class UserController {
     this.onSubmit();
     this.onEdit();
   }
-  onEdit() {}
+  onEdit() {
+    document
+      .querySelector("#box-user-update .btn-cancel")
+      .addEventListener("click", e => {
+        this.showPanelCreate();
+      });
+    this.formUpdateEl.addEventListener("submit", event => {
+      event.preventDefault();
+
+      let btn = this.formUpdateEl.querySelector("[type=submit]");
+      btn.disabled = true;
+      let values = this.getValues(this.formUpdateEl);
+      let index = this.formUpdateEl.dataset.trIndex;
+      let tr = this.tableEl.rows[index];
+      let userOld = JSON.parse(tr.dataset.user);
+      let result = Object.assign({}, userOld, values);
+
+      this.getPhoto(this.formUpdateEl).then(content => {
+        if (!values.foto) {
+          result._foto = userOld._foto;
+        } else {
+          result._foto = content;
+        }
+
+        tr.dataset.user = JSON.stringify(result);
+
+        tr.innerHTML = `<td>
+        <img
+          src="${result._foto}"
+          alt="User Image"
+          class="img-circle img-sm"
+        />
+        </td>
+        <td>${result._nome}</td>
+        <td>${result._email}</td>
+        <td>${result._admin ? "Sim" : "Não"}</td>
+        <td>${Utils.dateFormat(result._register)}</td>
+        <td>
+          <div
+            class="btn-group btn-group-sm"
+            role="group"
+            aria-label="Basic example"
+          >
+            <button
+              type="button"
+              class="btn btn-primary btn-sm btn-edit"
+            >
+              <i class="fa fa-edit"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger btn-sm btn-delete"
+            >
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </td>`;
+      });
+    });
+  }
 
   onSubmit() {
     this.formEl.addEventListener("submit", event => {
@@ -113,31 +172,31 @@ class UserController {
       alt="User Image"
       class="img-circle img-sm"
     />
-  </td>
-  <td>${dataUser.nome}</td>
-  <td>${dataUser.email}</td>
-  <td>${dataUser.status}</td>
-  <td>${Utils.dateFormat(dataUser.register)}</td>
-  <td>
-    <div
-      class="btn-group btn-group-sm"
-      role="group"
-      aria-label="Basic example"
-    >
-      <button
-        type="button"
-        class="btn btn-primary btn-sm btn-edit"
+    </td>
+    <td>${dataUser.nome}</td>
+    <td>${dataUser.email}</td>
+    <td>${dataUser.admin ? "Sim" : "Não"}</td>
+    <td>${Utils.dateFormat(dataUser.register)}</td>
+    <td>
+      <div
+        class="btn-group btn-group-sm"
+        role="group"
+        aria-label="Basic example"
       >
-        <i class="fa fa-edit"></i>
-      </button>
-      <button
-        type="button"
-        class="btn btn-danger btn-sm btn-delete"
-      >
-        <i class="fa fa-trash"></i>
-      </button>
-    </div>
-  </td>`;
+        <button
+          type="button"
+          class="btn btn-primary btn-sm btn-edit"
+        >
+          <i class="fa fa-edit"></i>
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm btn-delete"
+        >
+          <i class="fa fa-trash"></i>
+        </button>
+      </div>
+    </td>`;
 
     this.addEventsTr(tr);
 
