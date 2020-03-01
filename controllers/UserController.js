@@ -210,7 +210,7 @@ class UserController {
 
   addEventsTr(tr) {
     tr.querySelector(".btn-delete").addEventListener("click", e => {
-      if (contirm("Deseja realmente excluir?")) {
+      if (confirm("Deseja realmente excluir")) {
         tr.remove();
         this.updateCount();
       }
