@@ -88,6 +88,7 @@ class UserController {
           console.error(e);
         }
       );
+      console.log(values);
     });
   }
 
@@ -203,6 +204,8 @@ class UserController {
     this.tableEl.appendChild(tr);
 
     this.updateCount();
+
+    console.log(dataUser);
   }
 
   addEventsTr(tr) {

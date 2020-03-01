@@ -31,7 +31,7 @@ class User {
     this._admin = admin;
     this._foto = foto;
     this._tipo = tipo;
-    this._registroData = new Date();
+    this._register = new Date();
   }
   get nome() {
     return this._nome;
@@ -78,6 +78,10 @@ class User {
 
   get tipo() {
     return this._tipo;
+  }
+
+  get register() {
+    return this._register;
   }
 
   set foto(value) {

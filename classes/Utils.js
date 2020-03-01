@@ -1,11 +1,11 @@
 class Utils {
-  static dataFormat(date) {
+  static dateFormat(date) {
     return (
-      date.getData() +
+      date.getDate() +
       "/" +
       (date.getMonth() + 1) +
       "/" +
-      date.getFullYear()() +
+      date.getFullYear() +
       " " +
       date.getHours() +
       ":" +
