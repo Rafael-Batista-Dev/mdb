@@ -36,7 +36,8 @@ class UserController {
         <img
           src="${result._foto}"
           alt="User Image"
-          class="img-circle img-sm"
+          class="img-thumbnail foto"
+          style="width: 30px"
         />
         </td>
         <td>${result._nome}</td>
@@ -171,7 +172,8 @@ class UserController {
     <img
       src="${dataUser.foto}"
       alt="User Image"
-      class="img-circle img-sm"
+      class="img-thumbnail foto"
+      style="width: 30px"
     />
     </td>
     <td>${dataUser.nome}</td>
