@@ -127,7 +127,7 @@ class UserController {
         ["nome", "email", "senha", "cep"].indexOf(field.name) > -1 &&
         !field.value
       ) {
-        field.parentElement.classList.add("has-error");
+        field.parentElement.classList.add("alert-danger");
         isValid = false;
       }
 

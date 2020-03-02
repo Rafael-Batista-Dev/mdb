@@ -4781,8 +4781,9 @@ a.badge-dark:focus {
 }
 .alert-danger {
   color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
+  background-color: #d83c49;
+  border-color: #dd4655;
+  border-radius: 2px;
 }
 .alert-danger hr {
   border-top-color: #f1b0b7;
