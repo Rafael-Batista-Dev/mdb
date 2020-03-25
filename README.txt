@@ -1,3 +1,17 @@
+Projeto tem como objetivo implementar e apresentar o consumo de uma API de CEP para preenchimeto atomatico de endereço, o mesmo são armazenados no LocalStorage do navegador.
+
+
+Tecnologias utilizadas.
+
+NodeJs
+Expressar
+Validador expresso
+Javascript
+Html5
+Css3
+Bootstrap
+socket io
+
 Material Design for Bootstrap
 
 Version: MDB Free 4.8.5
