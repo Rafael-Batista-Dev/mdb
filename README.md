@@ -4,9 +4,9 @@ Tecnologias utilizadas.
 
 > Projeto tem como objetivo implementar e apresentar o consumo de uma API de CEP para preenchimento automático de endereço, o mesmo são armazenados no LocalStorage do navegador.
 
-![Imagem](https://github.com/Rafael-Batista-Dev/dist/img/blob/master/form.png)
+![Imagem](https://github.com/Rafael-Batista-Dev/mdb/blob/master/dist/img/form.png)
 
-![Imagem](https://github.com/Rafael-Batista-Dev/dist/img/blob/master/formTable.png)
+![Imagem](https://github.com/Rafael-Batista-Dev/mdb/blob/master/dist/img/formTable.png)
 
 ## Instalação
 
